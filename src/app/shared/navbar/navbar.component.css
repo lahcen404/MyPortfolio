@@ -1,0 +1,80 @@
+/* Custom Colors */
+.navbar {
+    background-color: #1C2526; /* Black */
+  }
+  
+  /* Navbar Brand Styling */
+  .navbar-brand {
+    color: #D4A017; /* Gold */
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-brand:hover {
+    color: #f1c40f; /* Lighter gold on hover */
+    transition: color 0.3s ease;
+  }
+  
+  /* Nav Link Styling */
+  .nav-link {
+    color: #ffffff; /* White text */
+    position: relative;
+    padding-bottom: 5px;
+  }
+  
+  /* Hover Effect: Underline Animation */
+  .nav-link-hover::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #D4A017; /* Gold underline */
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .nav-link-hover:hover::after {
+    width: 100%;
+  }
+  
+  .nav-link-hover:hover {
+    color: #D4A017; /* Gold on hover */
+  }
+  
+  /* Active Link Styling */
+  .nav-link.active {
+    color: #D4A017; /* Gold for active link */
+    font-weight: bold;
+  }
+  
+  /* Slide-In Animation */
+  .slide-in {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: slideIn 0.5s ease forwards;
+  }
+  
+  /* Staggered delays for each link */
+  .navbar-brand { animation-delay: 0.1s; }
+  .nav-link:nth-child(1) { animation-delay: 0.2s; }
+  .nav-link:nth-child(2) { animation-delay: 0.3s; }
+  .nav-link:nth-child(3) { animation-delay: 0.4s; }
+  .nav-link:nth-child(4) { animation-delay: 0.5s; }
+  .nav-link:nth-child(5) { animation-delay: 0.6s; }
+  
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Mobile Toggler Styling */
+  .navbar-toggler {
+    border-color: #D4A017;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23D4A017' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
