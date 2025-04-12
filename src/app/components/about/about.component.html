@@ -1,58 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern About Me Page</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
-    <style>
-       
-    </style>
-</head>
-<body>
-    <!-- About Section -->
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+<section id="about-section">
         <div class="container">
-            <div class="row d-flex">
-                <div class="col-md-6 col-lg-5 d-flex">
-                    <div class="img-about img d-flex align-items-stretch">
-                        <div class="overlay"></div>
-                        <img class="img d-flex align-self-stretch align-items-center" src="../../../assets/img/pexels-goumbik-574071.jpg">
-                        
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-7 heading-section text-center">
+                    <h1 class="big">About</h1>
+                    <h2>About Me</h2>
+                    <p>Get to know more about me and my background.</p>
+                </div>
+            </div>
+
+            <div class="row d-flex about-info mb-5 justify-content-center">
+                <!-- Name -->
+                <div class="col-md-4 col-lg-3 d-flex">
+                    <div class="box text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fas fa-user"></span>
+                        </div>
+                        <h3>Name</h3>
+                        <p>AIT MASKOUR Lahcen</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-                    <div class="row justify-content-start pb-3">
-                        <div class="col-md-12 heading-section">
-                            <h1 class="big">About</h1>
-                            <h2 class="mb-4">About Me</h2>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                            <ul class="about-info mt-4 px-md-0 px-2">
-                                <li class="d-flex"><span>Name:</span> <span>AIT MASKOUR Lahcen</span></li>
-                                <li class="d-flex"><span>Date of birth:</span> <span>February 02, 2003</span></li>
-                                <li class="d-flex"><span>Address:</span> <span>Taghzirt, Beni Mellal, MO </span></li>
-                                <li class="d-flex"><span>Zip code:</span> <span>23650</span></li>
-                                <li class="d-flex"><span>Email:</span> <span>lahcen.maskour2003&#64;gmail.com</span></li>
-                                <li class="d-flex"><span>Phone: </span> <span>+212654798379</span></li>
-                            </ul>
+                <!-- Date of Birth -->
+                <div class="col-md-4 col-lg-3 d-flex">
+                    <div class="box text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fas fa-birthday-cake"></span>
                         </div>
-                    </div>
-                    <div class="counter-wrap d-flex mt-md-3">
-                        <div class="text">
-            
-                            <p><a href="../../../assets/CV Lahcen Dev.pdf" class="btn btn-primary" download>Download CV</a></p>
-                        </div>
+                        <h3>Date of Birth</h3>
+                        <p>February 02, 2003</p>
                     </div>
                 </div>
+                <!-- Address -->
+                <div class="col-md-4 col-lg-3 d-flex">
+                    <div class="box text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fas fa-map-signs"></span>
+                        </div>
+                        <h3>Address</h3>
+                        <p>Beni Mellal, MO</p>
+                    </div>
+                </div>
+                <!-- Zip Code -->
+                <div class="col-md-4 col-lg-3 d-flex">
+                    <div class="box text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fas fa-map-marker-alt"></span>
+                        </div>
+                        <h3>Zip Code</h3>
+                        <p>23650</p>
+                    </div>
+                </div>
+                <!-- Email -->
+                <div class="col-md-4 col-lg-3 d-flex">
+                    <a href="mailto:lahcen.maskour2003@gmail.com" class="box text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fas fa-paper-plane"></span>
+                        </div>
+                        <h3>Email</h3>
+                        <p>lahcen.maskour2003gmail.com</p>
+                    </a>
+                </div>
+                <!-- Phone -->
+                <div class="col-md-4 col-lg-3 d-flex">
+                    <a href="tel:+212654798379" class="box text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fas fa-phone"></span>
+                        </div>
+                        <h3>Phone</h3>
+                        <p>+212654798379</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="counter-wrap">
+                <p><a href="../../../assets/CV Lahcen Dev.pdf" class="btn btn-primary" download>Download CV</a></p>
             </div>
         </div>
     </section>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
